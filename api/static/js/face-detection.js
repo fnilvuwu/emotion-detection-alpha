@@ -7,7 +7,7 @@ var tfliteModel = undefined;
 
 async function start() {
     await tflite.loadTFLiteModel(
-        "./static/model.tflite"
+        "api/static/model.tflite"
     ).then((loadedModel) => { 
         tfliteModel = loadedModel;
         warn.innerHTML = "Model has successfully loaded! Your camera should be displayed soon."
